@@ -1,1 +1,4 @@
 /MBF4Info/UserHomePage/CmbCCSettingFavorites.aspx?ccid=fd6f0c77-2078-4b89-ba88-e84389df0ec4-0005&behavior_entryid=GEF001005&DeviceType=E&Version=7.0.0
+for /d %%f in (%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_*) do reg load HKLM\_TMPVS_%%~nxf "%%f\privateregistry.bin"
+regedit
+for /d %%f in (%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_*) do reg unload HKLM\_TMPVS_%%~nxf
